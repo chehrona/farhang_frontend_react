@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+"use client";
 
-function App() {
+import React from "react";
+import "react-toastify/dist/ReactToastify.css";
+
+// Routing
+import { ErrorBoundary } from "react-error-boundary";
+import Routes from "./routes/Routes";
+
+// Contexts
+import { GlobalDataProvider } from "./hooks/useGlobalData";
+
+// Components
+import ErrorPage from "./error/errorPage/PageNotFound";
+// import CustomToastContainer from "./components/common/customToastContainer/CustomToastContainer";
+
+function App(): React.JSX.Element {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ErrorBoundary FallbackComponent={ErrorPage}>
+      <GlobalDataProvider>
+        <Routes />
+        {/* <CustomToastContainer /> */}
+      </GlobalDataProvider>
+    </ErrorBoundary>
   );
 }
 
