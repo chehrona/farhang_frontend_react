@@ -77,6 +77,10 @@ html {
         --page-radius: 0rem;
         --input-radius: 0.35rem;
     }
+
+    .parent-container {
+        background: var(--primary-light);
+    }
 }
 
 @media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
