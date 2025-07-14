@@ -22,7 +22,7 @@ export const ArticleContainer = styled.div`
     min-height: 100svh;
 
     @media (max-width: 480px) {
-        padding: 0rem;
+        padding: var(--page-padding);
     }
 
     @media screen and (min-device-width: 481px) and (max-device-width: 1024px) {

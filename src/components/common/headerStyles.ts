@@ -5,6 +5,10 @@ export const MainContainer = styled.div`
     height: var(--header-height);
     display: flex;
     background-color: var(--primary-dark);
+
+    @media (max-width: 480px) {
+        display: none;
+    }
 `;
 
 export const SideContainer = styled.div`

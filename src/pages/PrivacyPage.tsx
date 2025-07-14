@@ -8,7 +8,6 @@ import ArticlePageFirstContainer from '../components/common/pageWrapper/ArticleP
 import { SectionWrapper, Title, Text, List } from './privacyPageStyles';
 
 const PrivacyPage: React.FC = () => {
-    console.log('privacy page &&&&&&&&&&&&&&&&');
     return (
         <AppLayout>
             <ArticlePageFirstContainer>
