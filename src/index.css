@@ -93,7 +93,6 @@ html {
 }
 
 body {
-    background: var(--primary-black-color);
     margin: 0;
     height: 100%;
     width: 100%;
@@ -146,6 +145,12 @@ body * {
 
 .fade-out {
     animation: fadeOut 0.15s forwards;
+}
+
+@media (max-width: 480px) {
+    .parent-container {
+        background: var(--primary-light);
+    }
 }
 
 @keyframes fadeIn {
