@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Copyright } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
 import { Link } from 'react-router-dom';
 
@@ -32,7 +31,7 @@ export const FooterInnerContainer = styled.div`
 export const InfoContainer = styled.div`
     width: 100%;
     height: 100%;
-    padding: 3.85rem;
+    padding: 1.5rem 3.85rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -47,10 +46,6 @@ export const InfoContainer = styled.div`
     }
 `;
 
-export const StyledCopyrightIcon = styled(Copyright)`
-    margin-right: 0.25rem;
-`;
-
 export const Text = styled.div`
     display: flex;
     align-items: center;
@@ -58,6 +53,10 @@ export const Text = styled.div`
     width: 100%;
     padding: 0.5rem 0rem;
     font-size: var(--info);
+    background: var(--primary-dark);
+    color: var(--secondary-dark);
+    gap: 0.25rem;
+    border-top: 1px solid var(--secondary-dark);
 
     @media (max-width: 480px) {
         font-size: 0.75rem;

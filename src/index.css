@@ -77,10 +77,6 @@ html {
         --page-radius: 0rem;
         --input-radius: 0.35rem;
     }
-
-    .parent-container {
-        background: var(--primary-light);
-    }
 }
 
 @media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
@@ -98,6 +94,7 @@ body {
     width: 100%;
     font-family: 'IBM Plex Serif', serif;
     overflow: hidden;
+    background: var(--primary-dark);
 }
 
 body * {
@@ -119,6 +116,7 @@ body * {
     overflow-y: scroll;
     scroll-behavior: smooth;
     height: calc(100svh - var(--header-height));
+    background: var(--primary-light);
 }
 
 .content-container::-webkit-scrollbar {
@@ -148,6 +146,9 @@ body * {
 }
 
 @media (max-width: 480px) {
+    body {
+        background: var(--primary-light);
+    }
     .parent-container {
         background: var(--primary-light);
     }

@@ -3,25 +3,84 @@ import React from 'react';
 // Types
 import { CustomIconProps } from './types';
 
-import { Icon } from './customIconStyles';
-
-const CustomIcon: React.FC<CustomIconProps> = ({
-    icon,
-    color = 'var(--primary-dark)',
-}) => {
+const CustomIcon: React.FC<CustomIconProps> = ({ icon, size = 22 }) => {
     switch (icon) {
         case 'instagram':
-            return <Icon href="/icons/socials/instagram.svg" fill={color} />;
+            return (
+                <img
+                    src="./icons/socials/instagram.svg"
+                    height={`${size}rem`}
+                    width={`${size}rem`}
+                />
+            );
         case 'pinterest':
-            return <Icon href="/icons/socials/pinterest.svg" fill={color} />;
+            return (
+                <img
+                    src="./icons/socials/pinterest.svg"
+                    height={`${size}rem`}
+                    width={`${size}rem`}
+                />
+            );
         case 'twitter':
-            return <Icon href="/icons/socials/twitter.svg" fill={color} />;
+            return (
+                <img
+                    src="./icons/socials/twitter.svg"
+                    height={`${size}rem`}
+                    width={`${size}rem`}
+                />
+            );
         case 'tiktok':
-            return <Icon href="/icons/socials/tiktok.svg" fill={color} />;
+            return (
+                <img
+                    src="./icons/socials/tiktok.svg"
+                    height={`${size}rem`}
+                    width={`${size}rem`}
+                />
+            );
 
         // Header icons
         case 'menu':
-            return <Icon href="/icons/action/menu.svg" fill={color} />;
+            return (
+                <img
+                    src="./icons/action/menu.svg"
+                    height={`${size}rem`}
+                    width={`${size}rem`}
+                />
+            );
+        case 'copyright':
+            return (
+                <img
+                    src="./icons/copyright.svg"
+                    height={`${size}rem`}
+                    width={`${size}rem`}
+                />
+            );
+
+        // Flags
+        case 'tj':
+            return (
+                <img
+                    src="./icons/flags/tj.svg"
+                    height={`${size}rem`}
+                    width={`${size}rem`}
+                />
+            );
+        case 'ru':
+            return (
+                <img
+                    src="./icons/flags/ru.svg"
+                    height={`${size}rem`}
+                    width={`${size}rem`}
+                />
+            );
+        case 'en':
+            return (
+                <img
+                    src="./icons/flags/en.svg"
+                    height={`${size}rem`}
+                    width={`${size}rem`}
+                />
+            );
 
         default:
             return null;

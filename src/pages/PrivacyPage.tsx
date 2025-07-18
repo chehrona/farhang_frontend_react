@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 
 // Components
 import AppLayout from '../AppLayout';
@@ -8,21 +9,42 @@ import ArticlePageFirstContainer from '../components/common/pageWrapper/ArticleP
 import { SectionWrapper, Title, Text, List } from './privacyPageStyles';
 
 const PrivacyPage: React.FC = () => {
+    const location = useLocation();
+    const searchParams = new URLSearchParams(location.search);
+
+    const lang = searchParams.get('lang');
+
     return (
         <AppLayout>
             <ArticlePageFirstContainer>
                 <SectionWrapper>
-                    <Title>Privacy Policy</Title>
+                    <Title>
+                        {lang === 'en'
+                            ? 'Privacy Policy'
+                            : lang === 'ru'
+                            ? 'Политика конфиденциальности'
+                            : 'Сиёсати махфият'}
+                    </Title>
                     <Text>
-                        This privacy policy applies to the Farhang app (hereby
-                        referred to as "Application") for mobile devices that
+                        {lang === 'en'
+                            ? `This privacy policy applies to the Farhang app (hereby
+                        referred to as \"Application\") for mobile devices that
                         was created by Chehronai Fozil (hereby referred to as
-                        "Service Provider") as a Free service. This service is
-                        intended for use "AS IS".
+                        \"Service Provider\") as a Free service. This service is
+                        intended for use \"AS IS.\"`
+                            : lang === 'ru'
+                            ? ``
+                            : ``}
                     </Text>
                 </SectionWrapper>
                 <SectionWrapper>
-                    <Title>Information Collection and Use</Title>
+                    <Title>
+                        {lang === 'en'
+                            ? `Information Collection and Use`
+                            : lang === 'ru'
+                            ? `Сбор информации`
+                            : `Ҷамъоварии маълумот`}
+                    </Title>
                     <Text>
                         The Application collects information when you download
                         and use it. This information may include information
@@ -119,7 +141,13 @@ const PrivacyPage: React.FC = () => {
                     </Text>
                 </SectionWrapper>
                 <SectionWrapper>
-                    <Title>Children</Title>
+                    <Title>
+                        {lang === 'en'
+                            ? `Children`
+                            : lang === 'ru'
+                            ? `Сбор информации`
+                            : `Бачагон`}
+                    </Title>
                     <Text>
                         The Service Provider does not use the Application to
                         knowingly solicit data from or market to children under

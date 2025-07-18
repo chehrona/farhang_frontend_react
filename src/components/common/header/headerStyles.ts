@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const MainContainer = styled.div`
@@ -18,6 +19,11 @@ export const SideContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+`;
+
+export const StyledLink = styled(Link)`
+    height: 100%;
+    width: 100%;
 `;
 
 export const Logo = styled.img`

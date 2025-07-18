@@ -13,7 +13,6 @@ import CustomIcon from '../customIcon/CustomIcon';
 import {
     FooterContainer,
     FooterInnerContainer,
-    StyledCopyrightIcon,
     Text,
     StyledIconButton,
     SocialsWrapper,
@@ -76,10 +75,7 @@ const Footer: React.FC = () => {
                                 target={'_blank'}
                             >
                                 <StyledIconButton>
-                                    <CustomIcon
-                                        icon="instagram"
-                                        color="var(--primary-light)"
-                                    />
+                                    <CustomIcon icon="instagram" />
                                 </StyledIconButton>
                             </StyledLink>
                             <StyledLink
@@ -88,10 +84,7 @@ const Footer: React.FC = () => {
                                 target={'_blank'}
                             >
                                 <StyledIconButton>
-                                    <CustomIcon
-                                        icon="pinterest"
-                                        color="var(--primary-light)"
-                                    />
+                                    <CustomIcon icon="pinterest" />
                                 </StyledIconButton>
                             </StyledLink>
                             <StyledLink
@@ -100,10 +93,7 @@ const Footer: React.FC = () => {
                                 target={'_blank'}
                             >
                                 <StyledIconButton>
-                                    <CustomIcon
-                                        icon="facebook"
-                                        color="var(--primary-light)"
-                                    />
+                                    <CustomIcon icon="twitter" />
                                 </StyledIconButton>
                             </StyledLink>
                             <StyledLink
@@ -112,17 +102,14 @@ const Footer: React.FC = () => {
                                 target={'_blank'}
                             >
                                 <StyledIconButton>
-                                    <CustomIcon
-                                        icon="facebook"
-                                        color="var(--primary-light)"
-                                    />
+                                    <CustomIcon icon="facebook" />
                                 </StyledIconButton>
                             </StyledLink>
                         </SocialsWrapper>
                     </SocialsContainer>
                 </InfoContainer>
                 <Text>
-                    <StyledCopyrightIcon />
+                    <CustomIcon icon="copyright" size={15} />
                     {`2025 Farhang. ${staticText.FOOTER_TITLES.copyright[lang]}.`}
                 </Text>
             </FooterInnerContainer>

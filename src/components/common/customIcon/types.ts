@@ -1,4 +1,4 @@
 export type CustomIconProps = {
     icon: string;
-    color: string;
+    size?: number;
 };
