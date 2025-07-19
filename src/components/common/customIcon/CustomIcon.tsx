@@ -11,6 +11,7 @@ const CustomIcon: React.FC<CustomIconProps> = ({ icon, size = 22 }) => {
                     src="./icons/socials/instagram.svg"
                     height={`${size}rem`}
                     width={`${size}rem`}
+                    alt="icon"
                 />
             );
         case 'pinterest':
@@ -19,6 +20,7 @@ const CustomIcon: React.FC<CustomIconProps> = ({ icon, size = 22 }) => {
                     src="./icons/socials/pinterest.svg"
                     height={`${size}rem`}
                     width={`${size}rem`}
+                    alt="icon"
                 />
             );
         case 'twitter':
@@ -27,6 +29,7 @@ const CustomIcon: React.FC<CustomIconProps> = ({ icon, size = 22 }) => {
                     src="./icons/socials/twitter.svg"
                     height={`${size}rem`}
                     width={`${size}rem`}
+                    alt="icon"
                 />
             );
         case 'tiktok':
@@ -35,6 +38,7 @@ const CustomIcon: React.FC<CustomIconProps> = ({ icon, size = 22 }) => {
                     src="./icons/socials/tiktok.svg"
                     height={`${size}rem`}
                     width={`${size}rem`}
+                    alt="icon"
                 />
             );
 
@@ -45,6 +49,7 @@ const CustomIcon: React.FC<CustomIconProps> = ({ icon, size = 22 }) => {
                     src="./icons/action/menu.svg"
                     height={`${size}rem`}
                     width={`${size}rem`}
+                    alt="icon"
                 />
             );
         case 'copyright':
@@ -53,6 +58,7 @@ const CustomIcon: React.FC<CustomIconProps> = ({ icon, size = 22 }) => {
                     src="./icons/copyright.svg"
                     height={`${size}rem`}
                     width={`${size}rem`}
+                    alt="icon"
                 />
             );
 
@@ -63,6 +69,7 @@ const CustomIcon: React.FC<CustomIconProps> = ({ icon, size = 22 }) => {
                     src="./icons/flags/tj.svg"
                     height={`${size}rem`}
                     width={`${size}rem`}
+                    alt="icon"
                 />
             );
         case 'ru':
@@ -71,6 +78,7 @@ const CustomIcon: React.FC<CustomIconProps> = ({ icon, size = 22 }) => {
                     src="./icons/flags/ru.svg"
                     height={`${size}rem`}
                     width={`${size}rem`}
+                    alt="icon"
                 />
             );
         case 'en':
@@ -79,6 +87,7 @@ const CustomIcon: React.FC<CustomIconProps> = ({ icon, size = 22 }) => {
                     src="./icons/flags/en.svg"
                     height={`${size}rem`}
                     width={`${size}rem`}
+                    alt="icon"
                 />
             );
 

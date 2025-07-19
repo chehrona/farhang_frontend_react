@@ -43,6 +43,15 @@ const Footer: React.FC = () => {
                                 {staticText.FOOTER_TITLES.links[lang].list[0]}
                             </StyledLink>
                         </LinksWrapper>
+                        <LinksWrapper>
+                            <StyledLink
+                                to="/privacy"
+                                rel="noreferrer"
+                                target={'_blank'}
+                            >
+                                {staticText.FOOTER_TITLES.links[lang].list[1]}
+                            </StyledLink>
+                        </LinksWrapper>
                     </SocialsContainer>
                     <SocialsContainer>
                         <Title>
@@ -79,16 +88,7 @@ const Footer: React.FC = () => {
                                 </StyledIconButton>
                             </StyledLink>
                             <StyledLink
-                                to="https://www.pinterest.ca/thetajikheritage/"
-                                rel="noreferrer"
-                                target={'_blank'}
-                            >
-                                <StyledIconButton>
-                                    <CustomIcon icon="pinterest" />
-                                </StyledIconButton>
-                            </StyledLink>
-                            <StyledLink
-                                to="https://www.youtube.com/@thetajikheritage"
+                                to="https://www.twitter.com/farhangwords"
                                 rel="noreferrer"
                                 target={'_blank'}
                             >
@@ -97,12 +97,21 @@ const Footer: React.FC = () => {
                                 </StyledIconButton>
                             </StyledLink>
                             <StyledLink
-                                to="https://www.facebook.com/profile.php?id=61559405503836"
+                                to="https://www.pinterest.com/farhangwords"
                                 rel="noreferrer"
                                 target={'_blank'}
                             >
                                 <StyledIconButton>
-                                    <CustomIcon icon="facebook" />
+                                    <CustomIcon icon="pinterest" />
+                                </StyledIconButton>
+                            </StyledLink>
+                            <StyledLink
+                                to="https://www.tiktok.com/@farhangwords"
+                                rel="noreferrer"
+                                target={'_blank'}
+                            >
+                                <StyledIconButton>
+                                    <CustomIcon icon="tiktok" />
                                 </StyledIconButton>
                             </StyledLink>
                         </SocialsWrapper>

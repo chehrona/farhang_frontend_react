@@ -14,9 +14,7 @@ const AppLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
     const location = useLocation();
     const searchParams = new URLSearchParams(location.search);
     const parentRef = useRef<HTMLInputElement>(null);
-
-    const isApp = searchParams.get('source') === 'app';
-    const lang = searchParams.get('lang');
+    const isApp = searchParams.get('referrer') === 'app';
 
     return (
         <div className="parent-container">
@@ -30,7 +28,7 @@ const AppLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
                 {!isApp ? <Footer /> : null}
             </div>
             <div className="fixed-container">
-                <Flags />
+                {!isApp ? <Flags /> : null}
                 {/* <ScrollUpArrow parentRef={parentRef} />
                 <ScrollDownArrow /> */}
             </div>

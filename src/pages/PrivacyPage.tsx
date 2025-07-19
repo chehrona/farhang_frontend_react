@@ -1,5 +1,7 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+
+// Hooks
+import { useGlobalData } from '../hooks/useGlobalData';
 
 // Components
 import AppLayout from '../AppLayout';
@@ -9,11 +11,7 @@ import ArticlePageFirstContainer from '../components/common/pageWrapper/ArticleP
 import { SectionWrapper, Title, Text, List } from './privacyPageStyles';
 
 const PrivacyPage: React.FC = () => {
-    const location = useLocation();
-    const searchParams = new URLSearchParams(location.search);
-
-    const lang = searchParams.get('lang');
-
+    const { lang } = useGlobalData();
     return (
         <AppLayout>
             <ArticlePageFirstContainer>
@@ -28,10 +26,10 @@ const PrivacyPage: React.FC = () => {
                     <Text>
                         {lang === 'en'
                             ? `This privacy policy applies to the Farhang app (hereby
-                        referred to as \"Application\") for mobile devices that
+                        referred to as "Application") for mobile devices that
                         was created by Chehronai Fozil (hereby referred to as
-                        \"Service Provider\") as a Free service. This service is
-                        intended for use \"AS IS.\"`
+                        "Service Provider") as a Free service. This service is
+                        intended for use "AS IS."`
                             : lang === 'ru'
                             ? ``
                             : ``}

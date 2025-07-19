@@ -18,7 +18,6 @@ export const FooterContainer = styled.div`
 export const FooterInnerContainer = styled.div`
     background: var(--primary-dark);
     max-width: 1920px;
-    height: 100%;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -26,12 +25,13 @@ export const FooterInnerContainer = styled.div`
     align-items: center;
     box-sizing: border-box;
     justify-content: space-between;
+    height: fit-content;
 `;
 
 export const InfoContainer = styled.div`
     width: 100%;
-    height: 100%;
-    padding: 1.5rem 3.85rem;
+    height: fit-content;
+    padding: 1.5rem var(--page-padding);
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -67,7 +67,7 @@ export const Text = styled.div`
 export const SocialsContainer = styled.div`
     display: flex;
     flex-direction: column;
-    width: 14rem;
+    width: 23rem;
 
     @media (max-width: 480px) {
         margin-bottom: 2rem;
