@@ -21,9 +21,7 @@ const Header: React.FC = () => {
                 </StyledLink>
             </SideContainer>
             <Title>Farhang</Title>
-            <SideContainer>
-                <CustomIcon icon="menu" size={32} />
-            </SideContainer>
+            <SideContainer></SideContainer>
         </MainContainer>
     );
 };
