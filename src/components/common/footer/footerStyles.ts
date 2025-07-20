@@ -142,4 +142,8 @@ export const StyledIconButton = styled(IconButton)`
     &.MuiIconButton-root {
         padding: 0.6rem;
     }
+
+    &:hover {
+        filter: brightness(150%);
+    }
 `;
